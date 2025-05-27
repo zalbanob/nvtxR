@@ -2,8 +2,8 @@ Package: nvtxR
 Type: Package
 Title: R Bindings for NVTX Range Push/Pop
 Version: 0.1.0
-Author: Anon <anon@domain.com>
-Maintainer: Anon <anon@domain.com>
+Author: Ziyad AlBanoby <ziyad.albanoby@bsc.es>
+Maintainer: Ziyad AlBanoby <ziyad.albanoby@bsc.es>
 Description: Simple .Call wrappers to NVTX's nvtxRangePushEx & nvtxRangePop.
 License: MIT + file LICENSE
 LinkingTo: Rcpp
