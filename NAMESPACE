@@ -1,2 +1,2 @@
 useDynLib(nvtxR, .registration = TRUE)
-export(push_range, pop_range)
+export(nvtx_push_range, nvtx_pop_range, COLORS, GREEN, BLUE, YELLOW, MAGENTA, CYAN, RED, WHITE)

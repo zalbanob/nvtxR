@@ -9,7 +9,7 @@ static const uint32_t colors[] = {
 };
 static const int num_colors = sizeof(colors) / sizeof(uint32_t);
 
-SEXP R_push_range(SEXP nameSEXP, SEXP cidSEXP) {
+SEXP R_nvtx_push_range(SEXP nameSEXP, SEXP cidSEXP) {
     if (!Rf_isString(nameSEXP) || Rf_length(nameSEXP) != 1)
         Rf_error("name must be a string");
     if (!Rf_isInteger(cidSEXP) || Rf_length(cidSEXP) != 1)
@@ -31,15 +31,15 @@ SEXP R_push_range(SEXP nameSEXP, SEXP cidSEXP) {
     return R_NilValue;
 }
 
-SEXP R_pop_range(void) {
+SEXP R_nvtx_pop_range(void) {
     nvtxRangePop();
     return R_NilValue;
 }
 
 #include <R_ext/Rdynload.h>
 static const R_CallMethodDef CallEntries[] = {
-    {"R_push_range", (DL_FUNC) &R_push_range, 2},
-    {"R_pop_range",  (DL_FUNC) &R_pop_range,  0},
+    {"R_nvtx_push_range", (DL_FUNC) &R_nvtx_push_range, 2},
+    {"R_nvtx_pop_range",  (DL_FUNC) &R_nvtx_pop_range,  0},
     {NULL, NULL, 0}
 };
 
