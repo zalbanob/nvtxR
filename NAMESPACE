@@ -1,0 +1,2 @@
+useDynLib(nvtxR, .registration = TRUE)
+export(push_range, pop_range)
