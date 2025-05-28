@@ -1,2 +1,2 @@
-PKG_CFLAGS = -I/apps/ACC/NVIDIA-HPC-SDK/25.1/Linux_x86_64/25.1/cuda/include
-PKG_LIBS  = -L/apps/ACC/NVIDIA-HPC-SDK/25.1/Linux_x86_64/25.1/cuda/lib64/ -lnvToolsExt
+PKG_CFLAGS = -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/include
+PKG_LIBS  = -L/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64/ -lnvToolsExt
